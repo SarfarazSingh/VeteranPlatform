@@ -1,0 +1,32 @@
+{
+  "name": "veteran-transition-platform",
+  "version": "1.0.0",
+  "description": "A comprehensive platform helping veterans transition to civilian careers",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "lint": "eslint src",
+    "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,scss,html}'"
+  },
+  "keywords": [
+    "veteran",
+    "career",
+    "transition",
+    "resume",
+    "interview"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.x",
+    "@babel/preset-env": "^7.x",
+    "@testing-library/dom": "^9.x",
+    "@testing-library/jest-dom": "^6.x",
+    "jest": "^29.x",
+    "sass": "^1.x",
+    "vite": "^5.x"
+  }
+}
