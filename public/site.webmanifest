@@ -1,0 +1,21 @@
+{
+    "name": "Veteran Transition Platform",
+    "short_name": "VetTrans",
+    "description": "Empowering veterans with AI-powered tools to translate military skills into civilian success",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#2C5282",
+    "theme_color": "#2C5282",
+    "icons": [
+        {
+            "src": "/images/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+} 
