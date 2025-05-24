@@ -1,0 +1,202 @@
+/* ATS Scanner Styles */
+
+/* Upload Area Styling */
+.upload-area {
+    border: 2px dashed #0d6efd;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.upload-area:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+.upload-area.dragover {
+    background-color: #e2f0ff;
+    border-color: #0a58ca;
+}
+
+/* Score Gauge Styling */
+.score-gauge {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.gauge-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gauge-bg {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background-color: #e9ecef;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.gauge-fill {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    background: conic-gradient(#0d6efd 0%, #0d6efd 0%, #e9ecef 0%);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: all 1s ease-out;
+}
+
+.gauge-cover {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background-color: white;
+    top: 20px;
+    left: 20px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+/* Keyword Styling */
+.keyword-badge {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 0.85rem;
+}
+
+.keyword-match {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.keyword-missing {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+/* Detected Sections Styling */
+.section-badge {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 8px 12px;
+}
+
+/* Content Analysis Table Styling */
+.content-status-icon {
+    font-size: 1.2rem;
+}
+
+.status-good {
+    color: #198754;
+}
+
+.status-warning {
+    color: #ffc107;
+}
+
+.status-bad {
+    color: #dc3545;
+}
+
+/* Improvement Suggestions Styling */
+.improvement-item {
+    border-left: 4px solid #0d6efd;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.improvement-item h6 {
+    color: #0d6efd;
+}
+
+/* Scanning Progress Animation */
+@keyframes scan-animation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.scanning-animation {
+    background: linear-gradient(90deg, rgba(13, 110, 253, 0.1) 0%, rgba(13, 110, 253, 0.3) 50%, rgba(13, 110, 253, 0.1) 100%);
+    background-size: 200% 100%;
+    animation: scan-animation 1.5s infinite;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .score-gauge {
+        width: 150px;
+        height: 75px;
+    }
+    
+    .gauge-bg, .gauge-fill {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .gauge-cover {
+        width: 120px;
+        height: 120px;
+        top: 15px;
+        left: 15px;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .score-gauge {
+        margin-bottom: 30px;
+    }
+}
+
+/* Print Styles for Report */
+@media print {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .card {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+    
+    .no-print {
+        display: none !important;
+    }
+    
+    .score-gauge {
+        width: 150px;
+        height: 75px;
+    }
+    
+    .gauge-bg, .gauge-fill {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .gauge-cover {
+        width: 120px;
+        height: 120px;
+        top: 15px;
+        left: 15px;
+    }
+}

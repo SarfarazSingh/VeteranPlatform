@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veteran Transition Platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-shield me-2"></i>
+                Veteran Transition Platform
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="toolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Tools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="toolsDropdown">
+                            <li><a class="dropdown-item" href="components/skill_translator/index.html">Skill Translator</a></li>
+                            <li><a class="dropdown-item" href="components/resume_generator/index.html">Resume Generator</a></li>
+                            <li><a class="dropdown-item" href="components/ats_scanner/index.html">ATS Scanner</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item disabled" href="#">Video Resume Builder (Coming Soon)</a></li>
+                            <li><a class="dropdown-item disabled" href="#">AI Interview Coach (Coming Soon)</a></li>
+                            <li><a class="dropdown-item disabled" href="#">Learning Dashboard (Coming Soon)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-white text-center py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-lg-start">
+                    <h1 class="display-4 fw-bold mb-4">Your Military Skills,<br>Civilian Success</h1>
+                    <p class="lead mb-4">The all-in-one platform helping veterans translate their military experience into civilian career opportunities.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-lg-start">
+                        <a href="components/skill_translator/index.html" class="btn btn-primary btn-lg px-4 me-sm-3">Translate Your Skills</a>
+                        <a href="#features" class="btn btn-outline-light btn-lg px-4">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block">
+                    <img src="images/hero-image.svg" alt="Military to civilian transition" class="img-fluid hero-image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-5" id="features">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold">Powerful Tools for Your Transition Journey</h2>
+                    <p class="lead text-muted">Our platform offers comprehensive resources designed specifically for veterans entering the civilian workforce.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Skill Translator -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon bg-primary text-white mb-3">
+                                <i class="bi bi-translate"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold">Skill Translator</h3>
+                            <p class="card-text">Convert your military experience into civilian-friendly terms that employers understand and value.</p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Military-to-civilian role mapping</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Transferable skills identification</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Industry recommendations</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="components/skill_translator/index.html" class="btn btn-primary w-100">Try It Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Resume Generator -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon bg-primary text-white mb-3">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold">Resume Generator</h3>
+                            <p class="card-text">Create professional, ATS-friendly resumes that highlight your military experience in civilian terms.</p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Step-by-step builder</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Multiple professional templates</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Downloadable PDF format</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="components/resume_generator/index.html" class="btn btn-primary w-100">Build Your Resume</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- ATS Scanner -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm feature-card">
+                        <div class="card-body">
+                            <div class="feature-icon bg-primary text-white mb-3">
+                                <i class="bi bi-search"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold">ATS Scanner</h3>
+                            <p class="card-text">Analyze your resume against job descriptions to ensure it passes Applicant Tracking Systems.</p>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Keyword analysis</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Format compatibility check</li>
+                                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Improvement suggestions</li>
+                            </ul>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="components/ats_scanner/index.html" class="btn btn-primary w-100">Scan Your Resume</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coming Soon Features -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm feature-card coming-soon">
+                        <div class="card-body">
+                            <div class="feature-icon bg-secondary text-white mb-3">
+                                <i class="bi bi-camera-video"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold">Video Resume Builder</h3>
+                            <p class="card-text">Create professional video resumes that showcase your personality and communication skills.</p>
+                            <div class="coming-soon-badge">Coming Soon</div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-secondary w-100" disabled>Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm feature-card coming-soon">
+                        <div class="card-body">
+                            <div class="feature-icon bg-secondary text-white mb-3">
+                                <i class="bi bi-chat-dots"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold">AI Interview Coach</h3>
+                            <p class="card-text">Practice interviews with AI-powered feedback to build confidence and improve your responses.</p>
+                            <div class="coming-soon-badge">Coming Soon</div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-secondary w-100" disabled>Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm feature-card coming-soon">
+                        <div class="card-body">
+                            <div class="feature-icon bg-secondary text-white mb-3">
+                                <i class="bi bi-graph-up"></i>
+                            </div>
+                            <h3 class="card-title h5 fw-bold">Learning Dashboard</h3>
+                            <p class="card-text">Access personalized learning resources to develop the skills needed for your target career.</p>
+                            <div class="coming-soon-badge">Coming Soon</div>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <button class="btn btn-secondary w-100" disabled>Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold">How It Works</h2>
+                    <p class="lead text-muted">Our platform guides you through a simple process to transform your military experience into civilian career success.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="steps">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3 class="h5 fw-bold">Translate Your Skills</h3>
+                                <p>Enter your military background, and our AI-powered Skill Translator will convert your experience into civilian-friendly terms.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3 class="h5 fw-bold">Build Your Resume</h3>
+                                <p>Use our Resume Generator to create a professional, ATS-friendly resume that highlights your transferable skills.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3 class="h5 fw-bold">Optimize for ATS</h3>
+                                <p>Scan your resume against job descriptions to ensure it passes through Applicant Tracking Systems.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3 class="h5 fw-bold">Apply With Confidence</h3>
+                                <p>Submit your optimized resume to employers knowing it effectively communicates your value.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-8 mx-auto text-center">
+                    <a href="components/skill_translator/index.html" class="btn btn-primary btn-lg">Start Your Journey</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="fw-bold">Success Stories</h2>
+                    <p class="lead text-muted">Hear from veterans who successfully transitioned to civilian careers with our platform.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p class="testimonial-text">"After 12 years in the Army, I struggled to explain my experience to civilian employers. The Skill Translator helped me convert my military leadership into terms that resonated with hiring managers. I landed a senior operations role within 2 months!"</p>
+                                        <div class="testimonial-author">
+                                            <img src="images/testimonial-1.jpg" alt="Michael R." class="testimonial-avatar">
+                                            <div>
+                                                <h5 class="mb-0">Michael R.</h5>
+                                                <p class="text-muted mb-0">Former Army Staff Sergeant</p>
+                                                <p class="text-muted mb-0">Now: Operations Manager</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p class="testimonial-text">"The Resume Generator and ATS Scanner were game-changers for me. I went from getting zero callbacks to five interview requests in one week. The platform helped me understand how to position my Navy experience for civilian tech roles."</p>
+                                        <div class="testimonial-author">
+                                            <img src="images/testimonial-2.jpg" alt="Jennifer T." class="testimonial-avatar">
+                                            <div>
+                                                <h5 class="mb-0">Jennifer T.</h5>
+                                                <p class="text-muted mb-0">Former Navy IT Specialist</p>
+                                                <p class="text-muted mb-0">Now: Cybersecurity Analyst</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p class="testimonial-text">"As a Marine Corps logistics officer, I had valuable skills but didn't know how to market them. This platform helped me identify civilian industries where my experience was in high demand. The ATS Scanner helped me tailor my resume for each application."</p>
+                                        <div class="testimonial-author">
+                                            <img src="images/testimonial-3.jpg" alt="David L." class="testimonial-avatar">
+                                            <div>
+                                                <h5 class="mb-0">David L.</h5>
+                                                <p class="text-muted mb-0">Former Marine Corps Captain</p>
+                                                <p class="text-muted mb-0">Now: Supply Chain Director</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2 class="fw-bold mb-4">Ready to Start Your Civilian Career Journey?</h2>
+                    <p class="lead mb-4">Our platform provides all the tools you need to successfully transition from military service to civilian employment.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-center">
+                        <a href="components/skill_translator/index.html" class="btn btn-light btn-lg px-4 me-sm-3">Get Started</a>
+                        <a href="about.html" class="btn btn-outline-light btn-lg px-4">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h5 class="text-uppercase mb-4">Veteran Transition Platform</h5>
+                    <p>Empowering veterans to successfully transition to civilian careers through innovative tools and resources.</p>
+                    <div class="social-icons">
+                        <a href="#" class="me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="me-3"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Tools</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="components/skill_translator/index.html" class="text-white">Skill Translator</a></li>
+                        <li class="mb-2"><a href="components/resume_generator/index.html" class="text-white">Resume Generator</a></li>
+                        <li class="mb-2"><a href="components/ats_scanner/index.html" class="text-white">ATS Scanner</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Video Resume (Soon)</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50">Interview Coach (Soon)</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-4">Resources</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">Career Guide</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Industry Insights</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Success Stories</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="text-uppercase mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i> support@veterantransition.org</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> (555) 123-4567</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> 123 Veterans Way, Arlington, VA 22201</li>
+                    </ul>
+                    <form class="mt-4">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Veteran Transition Platform. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#" class="text-white">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Terms of Service</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white">Accessibility</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
